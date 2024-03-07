@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav class="main-container flex flex-row justify-between py-3 px-2">
+            <div class="logo">
+                <a class="font-extrabold text-2xl" href="#">MarvzKnows</a>
+            </div>
+
+            <span id="openMobileNav"><i class="fa-solid fa-bars"></i></span>
+            <ul class="flex gap-10 navlink-list">
+                <li>
+                    <a class="navLink font-semibold" href="#aboutMe">About me</a>
+                </li>
+                <li>
+                    <a class="navLink font-semibold" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="navLink font-semibold" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="mobileNavbar">
+                <span id="closeNavBtn" class="text-2xl p-2"><i class="fa-solid fa-xmark"></i></span>
+                <li class="mobile-links">
+                    <a class="navLink font-semibold" href="#aboutMe">About me</a>
+                </li>
+                <li class="mobile-links">
+                    <a class="navLink font-semibold" href="#projects">Projects</a>
+                </li>
+                <li class="mobile-links">
+                    <a class="navLink font-semibold" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-container mt-5">
+        <!-- About Me Section -->
+        <div id="aboutMe" class="about-me">
+            <div class="image-container">
+                <img src="naurto.jpg">
+            </div>
+            <div class="about-me-content flex flex-col justify-center items-center">
+                <h1>Hi, I'm <span style="color: #e11d48;">Marvin</span><span id="wavingHand">👋</span> </h1>
+                <p>Aspiring and dynamic web developer with a passion
+                    for creating responsive and user-friendly websites.
+                    Currently pursuing Bachelor of Science in Information
+                    Technologies</p>
+            </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="tech-stack-container main-container my-2">
+            <p class="tech-header">TECHNOLOGIES : </p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>BootStrap</p>
+            <p>JavaScript</p>
+            <p>JQuery</p>
+            <p>PHP</p>
+            <p>SQL, MYSQL</p>
+            <p>C++</p>
+            <p>C#</p>
+            <p>Unity Engine</p>
+        </div>
+
+        <!-- Projects -->
+        <div class="main-container projects-container my-5">
+            <div id="projects" class="project-header p-2.5 my-4 rounded text-center">
+                PROJECTS
+            </div>
+            <!-- PROJ #1 -->
+            <div class="project-name-header p-2.5 my-4 font-bold text-start underline">
+                ENROLLEASE: Innovating Student Registration and Timetable for Teachers at Kapitangan National High School
+            </div>
+            <div class="left-image-container">
+                <div class="zxc project-image-container">
+                    <img class="rounded-lg" src="images/capstone/admin.png">
+                </div>
+                <div class="zxc image-content px-4">
+                    <p class="text-center">In this project, the primary objective is to revolutionize the student registration and timetable management system at Kapitangan National High School with the creation of the comprehensive enrollment system, "EnrollEase: Innovating Student Registration and Timetable for Teachers at Kapitangan National High School." Tailored to accommodate both old and new students in the junior high level, this system streamlines and enhances the enrollment process. Within the framework of EnrollEase, functionalities extend beyond enrollment to include the creation and management of sections, subjects, teachers, and user accounts.</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+            </div>
+
+            <div class="right-image-container">
+                <div class="image-content px-4">
+                    <p class="text-center">EnrollEase has a primary focus of introducing a technologically advanced and user-friendly solution for optimizing the registration experience and timetable management that would benefit the whole Kapitangan National High School community. To evaluate the quality of EnrollEase system developed for student registration and timetable management at Kapitangan National High School through a website, ISO/IEC 9126 Software Quality Standards were used including Functionality, Reliability, Usability, Efficiency, and Maintainability. Kapitangan National High School is the beneficiary of this website.</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+                <div class="project-image-container">
+                    <img class="rounded-lg" src="images/capstone/records.png">
+                </div>
+            </div>
+            <!-- PROJ #2 -->
+            <div class="project-name-header p-2.5 my-4 text-base font-bold text-start underline">
+                JAVA-NEOFIGHT
+            </div>
+            <div class="left-image-container">
+                <div class="slideLeft project-image-container">
+                    <img class="rounded-lg" src="images/gamedev/menu.jpg">
+                </div>
+                <div class="slideLeft image-content px-4">
+                    <p class="text-center">A platformer game that have Niche/Sub-Genre of action-adventure game, the main character has a Three lives with a 100% health for each lives</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+            </div>
+
+            <div class="right-image-container">
+                <div class="image-content px-4">
+                    <p class="text-center">Game Concepts: A student has a java exam to take, but
+                        these monsterlike distractions hinder
+                        him from focusing. His mission is to beat
+                        them and get the correct answers for
+                        him to pass the said exam</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+                <div class="project-image-container">
+                    <img class="rounded-lg" src="images//gamedev/level1.jpg">
+                </div>
+            </div>
+
+            <div class="left-image-container">
+                <div class="slideLeft project-image-container">
+                    <img class="rounded-lg" src="images/gamedev/level2.jpg">
+                </div>
+                <div class="slideLeft image-content px-4">
+                    <p class="text-center">GAME MECHANICS:
+                        Avoid obstacles and kill opponents by using your skills that
+                        are also displayed on the screen.
+                        The main character only has three lives and will have to
+                        repeat the current level if there are no lives left.
+                        Find and take the correct answer.
+                        Go upstairs to get to the next level. If the answer is not the
+                        right one, he won't be able to go up. And every wrong answer
+                        can take one of the lives of the main character.
+                        </p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+            </div>
+
+            <div class="project-name-header p-2.5 my-4 text-base font-bold text-start underline">
+                WEATHER APP
+            </div>
+
+            <div class="right-image-container">
+                <div class="image-content px-4">
+                    <p class="text-center">Integrate weather into your applications with the easiest-to-use global weather API including historical weather data, current conditions, up-to-date forecasts, and historical forecast information.</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+                <div class="project-image-container">
+                    <img class="rounded-lg" src="images/weatherApi.png">
+                </div>
+            </div>
+
+            <div class="project-name-header p-2.5 my-4 text-base font-bold text-start underline">
+                DIGITAL CLOCK
+            </div>
+
+            <div class="left-image-container">
+                <div class="slideLeft project-image-container">
+                    <img class="rounded-lg" src="images/clock.png">
+                </div>
+                <div class="slideLeft image-content px-4">
+                    <p class="text-center">Created a realtime Philippine time base digital clock, using HTML, CSS and JavaScript</p>
+                    <a class="imageContentBtn mt-3" href="#">View project</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="main-container contact-form-container py-3 px-2">
+            <div class="personal-info-container">
+                <h1>Contact</h1>
+                <p><i class="fa-solid fa-house"></i>  13 Tibag, Pulilan Bulacan</p>
+                <p><i class="fa-solid fa-phone"></i>  09182455347 Monday - Sunday</p>
+                <p><i class="fa-solid fa-envelope"></i>  marvzknows03@gmail.com</p>
+            </div>
+            <div class="social-info-container">
+                <h1>Social Network</h1> <br>
+                <a href="https://www.linkedin.com/in/marvin-lim-b36588273/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/marvin.lim.102"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/marvzknows/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Marvzknows"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
