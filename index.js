@@ -3,8 +3,23 @@ const mobileLinks = document.querySelectorAll('.mobile-links');
 const openNavbarBtn = document.getElementById('openMobileNav');
 const closeNavbar = document.getElementById('closeNavBtn');
 
-const leftImageContainer = document.querySelectorAll('.left-image-container');
-const rightImageContainer = document.querySelectorAll('.right-image-container');
+const leftImageContainer = document.querySelectorAll('.slideLeft');
+const rightImageContainer = document.querySelectorAll('.slideRight');
+
+const themeBtn = document.getElementById('toggleTheme');
+const webLink = document.querySelectorAll('.web-link');
+const themeIcon = document.getElementById('themeIcon');
+
+// Toggle Theme
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    
+    themeIcon.classList.toggle('fa-regular fa-sun');
+    // themeIcon.repla
+    webLink.forEach(link => {
+        link.classList.toggle('light-mode-links');
+    })
+})
 
 // Handle Open Mobile Navbar
 openNavbarBtn.addEventListener('click', () => {
@@ -54,7 +69,7 @@ const rightObserver = new IntersectionObserver(
     },
 );
 
-rightImageContainer.forEach(leftContainer => {
-    rightObserver.observe(leftContainer);
+rightImageContainer.forEach(rightContainer => {
+    rightObserver.observe(rightContainer);
 });
 

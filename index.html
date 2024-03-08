@@ -12,23 +12,29 @@
     
     <!-- Navbar -->
     <header>
-        <nav class="main-container flex flex-row justify-between py-3 px-2">
+        <nav class="main-container flex flex-row items-center py-3 px-2">
             <div class="logo">
                 <a class="font-extrabold text-2xl" href="#">MarvzKnows</a>
             </div>
 
-            <span id="openMobileNav"><i class="fa-solid fa-bars"></i></span>
-            <ul class="flex gap-10 lg:flex hidden navlink-list ">
-                <li>
-                    <a class="navLink font-semibold" href="#aboutMe">About me</a>
-                </li>
-                <li>
-                    <a class="navLink font-semibold" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a class="navLink font-semibold" href="#contact">Contact</a>
-                </li>
-            </ul>
+            <div class="ms-auto flex gap-5">
+                <ul class="flex gap-10 lg:flex hidden navlink-list ms-auto">
+                    <li>
+                        <a class="web-link font-semibold" href="#aboutMe">About me</a>
+                    </li>
+                    <li>
+                        <a class="web-link font-semibold" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="web-link font-semibold" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Theme -->
+                <span class="cursor-pointer border-l border-r px-2 py-0" id="toggleTheme"><i id="themeIcon" class="fa-solid fa-sun"></i></span>
+            </div>
+
+            <span id="openMobileNav" class="ms-5"><i class="fa-solid fa-bars"></i></span>
 
             <ul class="mobileNavbar">
                 <span id="closeNavBtn" class="text-2xl p-2"><i class="fa-solid fa-xmark"></i></span>
@@ -42,6 +48,7 @@
                     <a class="navLink font-semibold" href="#contact">Contact</a>
                 </li>
             </ul>
+
         </nav>
     </header>
     
@@ -50,7 +57,7 @@
         <!-- About Me Section -->
         <div id="aboutMe" class="about-me">
             <div class="image-container">
-                <img src="naurto.jpg">
+                <img src="myPic.jpg">
             </div>
             <div class="about-me-content flex flex-col justify-center items-center">
                 <h1>Hi, I'm <span style="color: #e11d48;">Marvin</span><span id="wavingHand">👋</span> </h1>
@@ -86,21 +93,21 @@
                 ENROLLEASE: Innovating Student Registration and Timetable for Teachers at Kapitangan National High School
             </div>
             <div class="left-image-container">
-                <div class="zxc project-image-container">
+                <div class="slideLeft project-image-container">
                     <img class="rounded-lg" src="images/capstone/admin.png">
                 </div>
-                <div class="zxc image-content px-4">
+                <div class="slideLeft image-content px-4">
                     <p class="text-center">In this project, the primary objective is to revolutionize the student registration and timetable management system at Kapitangan National High School with the creation of the comprehensive enrollment system, "EnrollEase: Innovating Student Registration and Timetable for Teachers at Kapitangan National High School." Tailored to accommodate both old and new students in the junior high level, this system streamlines and enhances the enrollment process. Within the framework of EnrollEase, functionalities extend beyond enrollment to include the creation and management of sections, subjects, teachers, and user accounts.</p>
                     <a class="imageContentBtn mt-3" href="#">View project</a>
                 </div>
             </div>
 
             <div class="right-image-container">
-                <div class="image-content px-4">
+                <div class="slideRight image-content px-4">
                     <p class="text-center">EnrollEase has a primary focus of introducing a technologically advanced and user-friendly solution for optimizing the registration experience and timetable management that would benefit the whole Kapitangan National High School community. To evaluate the quality of EnrollEase system developed for student registration and timetable management at Kapitangan National High School through a website, ISO/IEC 9126 Software Quality Standards were used including Functionality, Reliability, Usability, Efficiency, and Maintainability. Kapitangan National High School is the beneficiary of this website.</p>
                     <a class="imageContentBtn mt-3" href="#">View project</a>
                 </div>
-                <div class="project-image-container">
+                <div class="slideRight project-image-container">
                     <img class="rounded-lg" src="images/capstone/records.png">
                 </div>
             </div>
@@ -119,7 +126,7 @@
             </div>
 
             <div class="right-image-container">
-                <div class="image-content px-4">
+                <div class="slideRight image-content px-4">
                     <p class="text-center">Game Concepts: A student has a java exam to take, but
                         these monsterlike distractions hinder
                         him from focusing. His mission is to beat
@@ -127,7 +134,7 @@
                         him to pass the said exam</p>
                     <a class="imageContentBtn mt-3" href="#">View project</a>
                 </div>
-                <div class="project-image-container">
+                <div class="slideRight project-image-container">
                     <img class="rounded-lg" src="images//gamedev/level1.jpg">
                 </div>
             </div>
@@ -156,11 +163,11 @@
             </div>
 
             <div class="right-image-container">
-                <div class="image-content px-4">
+                <div class="slideRight image-content px-4">
                     <p class="text-center">Integrate weather into your applications with the easiest-to-use global weather API including historical weather data, current conditions, up-to-date forecasts, and historical forecast information.</p>
                     <a class="imageContentBtn mt-3" href="#">View project</a>
                 </div>
-                <div class="project-image-container">
+                <div class="slideRight project-image-container">
                     <img class="rounded-lg" src="images/weatherApi.png">
                 </div>
             </div>
